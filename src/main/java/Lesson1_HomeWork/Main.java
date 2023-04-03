@@ -11,8 +11,7 @@ public class Main {
 
         // Просим команду пройти полосу
         c.doIt(team);
-
-
+        
         System.out.println("\nWinners:");
         team.passedTheDistance();
 
