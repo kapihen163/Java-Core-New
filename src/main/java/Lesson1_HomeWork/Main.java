@@ -15,7 +15,7 @@ public class Main {
         System.out.println("\nWinners:");
         team.passedTheDistance();
 
-        
+
         // Показываем результаты
         System.out.println("\nResult:");
         team.showResults();
