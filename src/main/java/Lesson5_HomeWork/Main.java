@@ -25,5 +25,6 @@ public class Main {
         System.out.println(Arrays.deepToString(appData.getData()));
 
         appData.save("hw5_1.txt");
+
     }
 }
