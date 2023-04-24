@@ -28,7 +28,7 @@ public class OkHtppExamples {
         HttpUrl httpUrl = new HttpUrl.Builder()
                 .scheme("http")
                 .host("dataservice.accuweather.com")
-                .addPathSegment("/forecasts/v1/daily/5day/25123")
+                .addPathSegment("/forecasts/v1/daily/5day/25123?E0ciJ0ySS1cSdeKm4F5IEPZjYqSzwGLS")
 //                .addQueryParameter(E0ciJ0ySS1cSdeKm4F5IEPZjYqSzwGLS)
                 .build();
 
@@ -40,9 +40,10 @@ public class OkHtppExamples {
 
         Response response = okHttpClient.newCall(request).execute();
 
-        System.out.println(response.code());
+        System.out.println("Код ответа " + response.code());
         System.out.println(response.headers());
         System.out.println(response.body().string());
+        System.out.println("Метод запроса " + request.method());
 
 
     }
