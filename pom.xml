@@ -14,4 +14,39 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.9.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.2</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.minsin</groupId>
+            <artifactId>mutils-core</artifactId>
+            <version>0.3.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.wniemiec-util-java/string-utils -->
+        <dependency>
+            <groupId>io.github.wniemiec-util-java</groupId>
+            <artifactId>string-utils</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+
+    </dependencies>
+
 </project>
