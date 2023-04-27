@@ -33,6 +33,19 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.14.2</version>
         </dependency>
+        <dependency>
+            <groupId>cn.minsin</groupId>
+            <artifactId>mutils-core</artifactId>
+            <version>0.3.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.wniemiec-util-java/string-utils -->
+        <dependency>
+            <groupId>io.github.wniemiec-util-java</groupId>
+            <artifactId>string-utils</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
 
     </dependencies>
 

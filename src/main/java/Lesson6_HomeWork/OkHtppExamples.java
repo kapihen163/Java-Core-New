@@ -1,6 +1,5 @@
 package Lesson6_HomeWork;
 
-import Lesson6_Class.OkHttpExamples;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -18,6 +17,8 @@ import java.util.concurrent.TimeUnit;
 //        Бесплатный тарифный план предполагает получение погоды не более чем на
 //        5 дней вперед (этого достаточно для выполнения д/з).
 
+//GET /forecasts/v1/daily/5day/locationKey?apikey=E0ciJ0ySS1cSdeKm4F5IEPZjYqSzwGLS&language=rus&metric=true HTTP/1.1
+
 public class OkHtppExamples {
     public static void main(String[] args) throws IOException {
         OkHttpClient okHttpClient = new OkHttpClient()
@@ -28,7 +29,7 @@ public class OkHtppExamples {
         HttpUrl httpUrl = new HttpUrl.Builder()
                 .scheme("http")
                 .host("dataservice.accuweather.com")
-                .addPathSegment("/forecasts/v1/daily/5day/25123?E0ciJ0ySS1cSdeKm4F5IEPZjYqSzwGLS")
+                .addPathSegment("GET /forecasts/v1/daily/5day/locationKey?apikey=E0ciJ0ySS1cSdeKm4F5IEPZjYqSzwGLS&language=ru&metric=true HTTP/1.1")
 //                .addQueryParameter(E0ciJ0ySS1cSdeKm4F5IEPZjYqSzwGLS)
                 .build();
 

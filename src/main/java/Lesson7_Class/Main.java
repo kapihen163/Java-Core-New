@@ -38,11 +38,31 @@ public class Main {
 
         System.out.println(carsFromJSON);
 
-        String jasonCarAfterUpdate = "{\"color\":\"белый\",\"type\":\"Lada\",\"year\":\"Lada\"}";
+//        String jasonCarAfterUpdate = "{\"color\":\"белый\",\"type\":\"Lada\",\"year\":\"Lada\"}";
+
+        String jsonCarAfterUpdate = "{\"color\":\"белый\",\"type\":\"Lada\",\"year\":\"Lada\"}";
 
 //        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        Car carAfterUpdate = objectMapper.readValue(jasonCarAfterUpdate, Car.class);
+        Car carAfterUpdate = objectMapper.readValue(jsonCarAfterUpdate, Car.class);
         System.out.println(carAfterUpdate);
+
+        String jsonCarAfterRefactoring = "{\"color\":\"белый\",\"model\":\"Lada\"}";
+        Car CarAfterRefactoring = objectMapper.readValue(jsonCarAfterRefactoring, Car.class);
+
+        System.out.println(CarAfterRefactoring);
+
+
+        Car carWithSeat = new Car("Yellow","Peugot");
+        carWithSeat.setSeat(new Seat(5));
+
+        String carWithSaetLSON = objectMapper.writeValueAsString(carWithSeat);
+        System.out.println(carWithSaetLSON);
+
+        Car carWithSeatFromJSON = objectMapper.readValue(carWithSaetLSON, Car.class);
+        System.out.println(carWithSeatFromJSON);
+
+
+
 
 
     }

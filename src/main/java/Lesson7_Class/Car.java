@@ -1,23 +1,18 @@
 package Lesson7_Class;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Car {
     private String color;
+    @JsonProperty("model")
     private String type;
+    private Seat seat;
 
     public String getColor() {
         return color;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "color='" + color + '\'' +
-                ", type='" + type + '\'' +
-                '}';
     }
 
     public void setColor(String color) {
@@ -37,6 +32,23 @@ public class Car {
         this.type = type;
     }
 
+    public Seat getSeat() {
+        return seat;
+    }
+
+    public void setSeat(Seat seat) {
+        this.seat = seat;
+    }
+
     public Car() {
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "color='" + color + '\'' +
+                ", type='" + type + '\'' +
+                ", seat=" + seat +
+                '}';
     }
 }
