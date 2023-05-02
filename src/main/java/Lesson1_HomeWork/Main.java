@@ -12,10 +12,10 @@ public class Main {
         // Просим команду пройти полосу
         c.doIt(team);
 
-
         System.out.println("\nWinners:");
         team.passedTheDistance();
 
+        
         // Показываем результаты
         System.out.println("\nResult:");
         team.showResults();
