@@ -1,4 +1,4 @@
-package Lesson7_Class.project.Model;
+package Lesson8_HomeWork.model;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -6,7 +6,6 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -19,8 +18,9 @@ import java.util.Map;
         "MobileLink",
         "Link"
 })
+public class DailyForecast implements Serializable
+{
 
-public class DailyForecast implements Serializable {
     @JsonProperty("Date")
     private String date;
     @JsonProperty("EpochDate")

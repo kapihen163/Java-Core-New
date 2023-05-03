@@ -1,4 +1,4 @@
-package Lesson7_Class.project.Model;
+package Lesson8_HomeWork.model;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -14,7 +14,6 @@ import java.util.Map;
         "PrecipitationType",
         "PrecipitationIntensity"
 })
-
 public class Day implements Serializable
 {
 

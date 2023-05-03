@@ -1,7 +1,7 @@
-package Lesson7_HomeWork;
+package Lesson8_HomeWork;
 
-import Lesson7_HomeWork.model.DailyForecast;
-import Lesson7_HomeWork.model.WeatherResponse;
+import Lesson8_HomeWork.model.DailyForecast;
+import Lesson8_HomeWork.model.WeatherResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 

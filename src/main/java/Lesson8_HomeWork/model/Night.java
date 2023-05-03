@@ -1,5 +1,4 @@
-package Lesson7_Class.project.Model;
-
+package Lesson8_HomeWork.model;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -93,4 +92,3 @@ public class Night implements Serializable
     }
 
 }
-
