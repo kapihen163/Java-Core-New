@@ -15,7 +15,6 @@ public class Team {
         partner[2] = com3;
     }
 
-
     // Вывод информации кто прошел дистанцию
     public void passedTheDistance() {
         for (Competitor com : partner) {
